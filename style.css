@@ -86,17 +86,36 @@ nav a:hover {
      gap: 6px;
      cursor: pointer;
      z-index: 1100;
+    position: relative;
     }
 
 .hamburger div {
     display: block;
-    width: 35px;
-    height: 4px;
+    width: 24px;
+    height: 2px;
     background: black;
     -webkit-transition: all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out ;
     
 }
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  
+.hamburger.open div:nth-child(2) {
+    opacity: 0; /* hide middle bar */
+  }
+  
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position:absolute;
+  }
+.hamburger div {
+  transition: all 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+  }
+  
 @media (max-width: 768px) {
     nav {
         display: flex;
