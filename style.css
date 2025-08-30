@@ -142,7 +142,7 @@ nav a:hover {
 }
 #home {
     height: 100vh;
-    background-image:url("images/girl.jpg");
+    background-image:url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ nav a:hover {
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    color: white;
+    color: black;
     position: relative;
     padding: 0;
    max-width: 100%;
@@ -177,7 +177,7 @@ display: inline-block;
   max-width: 900px;        
   margin: 20px auto 0;     
   /* text-align: center;       */
-  color: white; 
+  color: Black; 
  }
 #home h4,
 #home p {
@@ -257,7 +257,7 @@ h2 {margin-bottom: 20px; text-align: center;}
     min-height: 30vh; 
     padding: 40px 10%;
     /* background-color: #333; */
-    background-image: url("images/girl.jpg");
+    background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;         /* fills the container */
     background-position: center;    /* shows the center of the image */
     background-repeat: no-repeat;
@@ -265,7 +265,7 @@ h2 {margin-bottom: 20px; text-align: center;}
 
 .contact-header{
     text-align: center;
-    color: #f5f7fa;
+    color: black;
 }
 .contact-header p:first-child{
     font-size: 2rem;
@@ -321,12 +321,12 @@ i {
     color: blue;
 }
 .contact .contact-details .details .items p:first-child {
-    color: white;
+    color: black;
     font-size: 1.4em;
     font-weight: 300;
 }
 .contact .contact-details .details .items p:last-child{
-    color: whitesmoke;
+    color: black;
     opacity: 0.7;
 }
 .contact .contact-form{
@@ -346,13 +346,13 @@ i {
     padding: 0 20px;
     background: transparent;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 15px;
-    color: #fff;
+    color: black;
     font-size: 1.1rem;
 }
 .input-container .input input::placeholder, .message-container textarea{
-   color: white;
+   color: black;
    opacity: 0.7;
 }
 .contact .contact-form .message-container textarea{
@@ -379,6 +379,10 @@ i {
 .contact .action-button button:hover{
      background-color: #ffd700;
 }
+.message-container textarea::placeholder {
+    color: black;
+  }
+  
 /* media queries */
 
 /* 1280px */
